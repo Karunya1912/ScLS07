@@ -1,5 +1,5 @@
 object Que1{
-    
+
     def filterEvenNumbers(numbers:List[Int]):List[Int]={
         numbers.filter(n=>n%2==0)
     }
@@ -9,4 +9,5 @@ object Que1{
         val output=filterEvenNumbers(input)
         println(output)
     }
+    
 }

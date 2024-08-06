@@ -10,4 +10,5 @@ object Que2{
         println(output)
 
     }
+    
 }

@@ -3,7 +3,18 @@ object Que3{
     def  isPrime(n:Int):Boolean={
         if (n<=1) false
         else if (n==2) true
-        else !(2 to math.sqrt(n).toInt).exists(x=> n%x == 0)
+        else {
+            var isPrime=true
+            for(i <- 2 to math.sqrt(n).toInt if isPrime)
+            {
+                if(n % i == 0)
+                {
+                    isPrime=false
+                }
+                
+            }
+            isPrime
+        }
     }
 
     def filterPrime(numbers:List[Int]):List[Int] = {
